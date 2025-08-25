@@ -16,7 +16,7 @@ DB_USERNAME = os.getenv('DB_USERNAME')
 DB_PASSWORD = os.getenv('DB_PASSWORD')
 
 # Connection string
-CONN_STR = f"DATABASE={DB_NAME};HOSTNAME={DB_HOST};PORT={DB_PORT};PROTOCOL=TCPIP;UID={DB_USERNAME};PWD={DB_PASSWORD};SECURITY=SSL;"
+CONN_STR = f"DATABASE={DB_NAME};HOSTNAME={DB_HOST};PORT={DB_PORT};PROTOCOL=TCPIP;UID={DB_USERNAME};PWD={DB_PASSWORD};"
 
 def fallback_response(service_name, error_msg=None):
     resp = {"error": f"{service_name} service unavailable", "fallback": True}
